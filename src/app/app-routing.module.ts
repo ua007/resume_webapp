@@ -5,9 +5,9 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { SkillsComponent } from './components/skills/skills.component';
 
 const routes: Routes = [
-  { path: '/education', component: EducationComponent},
-  { path: '/experience', component: ExperienceComponent},
-  { path: '/skills', component: SkillsComponent}
+  { path: 'education', component: EducationComponent},
+  { path: 'experience', component: ExperienceComponent},
+  { path: 'skills', component: SkillsComponent}
 ];
 
 @NgModule({

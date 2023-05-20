@@ -10,7 +10,7 @@
     </mat-tab>
 </mat-tab-group> -->
 
-<!-- <div>
+<div>
     <mat-sidenav-container>
         <mat-sidenav [opened]="true" >
             <mat-nav-list>
@@ -25,30 +25,30 @@
             <app-skills id="skill"></app-skills>
         </mat-sidenav-content>
     </mat-sidenav-container>
-</div> -->
+</div>
 
 <div class="wrapper">
     <!-- Sidebar Holder -->
-    <nav id="sidebar">
-      <div class="sidebar-header">
-        <h2>UTKARSH ANAND</h2>
-      </div>
-
-      <ul class="list-unstyled components">
+    
+    <mat-toolbar color="primary" class="mat-toolbar">
+        <button class="btn btn-menu-icon" mat-icon-button (click)="toggleSidebar()"><mat-icon>menu</mat-icon></button>
+        <!-- <div class="sidebar-header"> -->
+            <h2>UTKARSH ANAND</h2>
+        <!-- </div> -->
+    </mat-toolbar>
+    <nav id="sidebar" [hidden]="sidebarHidden">
+      <ul>
         <li class="active">
-          <a href="#menu">Introduction</a>
+          <a routerLink=".">Introduction</a>
         </li>
         <li>
-          <a href="#menu">Experience</a>
+          <a routerLink="experience">Experience</a>
         </li>
         <li>
-          <a href="#menu">Skills</a>
+          <a routerLink="skills">Skills</a>
         </li>
         <li>
-          <a href="#">Education</a>
-        </li>
-        <li>
-          <a href="#">Certificates</a>
+          <a routerLink="education">Education & Cretifications</a>
         </li>
         <li>
           <a href="#">Contact Info</a>
@@ -79,6 +79,7 @@
 
 
     </div> -->
-  </div>
+
+</div>
 
   

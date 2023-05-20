@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  ngOnInit(): void {
-    
+  sidebarHidden: boolean = true;
+  
+  ngOnInit(): void { }
+
+  toggleSidebar() {
+    this.sidebarHidden = !this.sidebarHidden;
   }
 }

@@ -44,58 +44,47 @@ p {
 ----------------------------------------------------- */
 
   #sidebar {
-    width: 250px;
+    width: 350px;
     position: fixed;
-    top: 0;
+    top: 100;
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: black;
+    background: rgb(35, 44, 125);
     color: #080808 !important;
     transition: all 0.3s;
   }
 
-  nav {
-    opacity: 0.7;
-  }
-
-  
   #sidebar > .sidebar-header {
     padding: 20px;
-    background: black;
+    background: rgb(2, 2, 62);
   }
 
-  .sidebar-header > h2 {
+  mat-toolbar > h2 {
       color: white;
-  }
-  
-  #sidebar > ul.components {
-    padding: 20px 0;
-    border-bottom: 1px solid black;
-  }
-  
-  #sidebar > ul > p {
-    color: white;
-    padding: 10px;
+      font-size: 230%;
+      text-align: center;
   }
   
   #sidebar > ul > li > a {
-    padding: 10px;
+    padding: 25px;
     font-size: 1.1em;
     display: block;
     color:white;
+    border-bottom: 1px solid black;
+    /* opacity: 1; */
   }
 
   #sidebar > ul > li > a:hover {
     color: black;
-    background: #fff;
-    opacity: 0.7;
+    background: aliceblue;
+    /* opacity: 0.7; */
   }
 
-  #sidebar > ul > li.active>a {
+  #sidebar > ul > li.active > a {
     color: #080808;
-    background-color: white;
-    opacity: 0.7;
+    background-color: aliceblue;
+    /* opacity: 0.7; */
   }
 /*   
   #sidebar > ul > li.active>a,
