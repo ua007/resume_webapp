@@ -13,6 +13,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { SidebarNavComponent } from './sidebar-nav/sidebar-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import { MatIconModule } from '@angular/material/icon';
     HeaderComponent,
     ExperienceComponent,
     EducationComponent,
-    SkillsComponent
+    SkillsComponent,
+    SidebarNavComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,9 @@ import { MatIconModule } from '@angular/material/icon';
     MatSidenavModule,
     MatListModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    LayoutModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
